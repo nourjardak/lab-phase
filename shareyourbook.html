@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Share your book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/shareyourbook.css">
+</head>
+<body>
+    <div class=" fillform container-md container border p-0">
+        <div id="title" class="p-lg-5 py-5 text-center ">
+            <h3 class="col-12">Please Fill This Form</h3>
+            <h6 class="col-12">Feel Free To Add Your Own Touch To This Website!!</h6>
+        </div>
+        <form class="py-lg-3 px-lg-5 py-3 px-2 ">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">PassWord</label>
+                <input type="password" class="form-control" id="password" placeholder="password" required>
+              </div>
+            <div class="row">
+            <div class="form-group col">
+              <label for="genre">Select The Genre Of Your Book</label>
+              <select class="form-control" id="exampleFormControlSelect1" required>
+                <option>Historical</option>
+                <option>Romance</option>
+                <option>Thriller</option>
+                <option>Mystey</option>
+                <option>Fantasy</option>
+                <option>Action</option>
+              </select>
+            </div>
+            <div class="form-group col">
+                <label for="title">Title Of The Book</label>
+                <input type="text" class="form-control" id="book-title" placeholder="type the title here" required>
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col">
+                <label for="author">Author Of The book</label>
+                <input type="text" class="form-control" id="author" placeholder="type the name here" required>
+              </div>
+            <div class="form-group col">
+                <label for="year">The Year Of Release</label>
+                <input type="text" class="form-control" id="year" placeholder="type the year here" required>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Feel free to tell us your own opinion of the book !!(optional)</label>
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+              </div>
+              <div class="form-group "><button class="btn btn-secondary btn-block" type="submit">Submit form</button></div>
+              
+          </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="/shareyourbook.js"></script>
+</body>
+</html>
