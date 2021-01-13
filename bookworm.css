@@ -1,0 +1,470 @@
+
+#body{
+    box-sizing: border-box;
+}
+/*start navbar*/
+
+#book{
+    color:#312229;   
+    font-weight: 400;
+    font-size: 32px;
+}
+.hac{
+    font-weight: 400;
+    color: black;
+}
+/*end navbar*/
+/*start slide*/
+.img1{
+    height: 550px;
+}
+.welcome{
+    font-size: 72px;
+    font-weight: 600;
+}
+.welcome2{
+    font-size: 72px;
+    font-weight: 600;
+}
+@media(max-width: 600px ){
+    h2#titre1{
+        font-size: 24px !important;
+        
+    }
+    #img2{
+        width:100%;
+        height: auto;
+    }
+    #aboutmy{
+        line-height: 5px;
+        font-size: 11px;
+    }
+    .welcome{
+        font-size: 36px !important;
+        font-weight: 300 !important;
+    }
+    .welcome2{ 
+        color: white;
+        font-size: 30px !important;
+        font-weight: 600 !important;  
+    }
+    .para1{
+         font-size: 14px !important;
+         font-weight: 300 !important;
+         color: white !important;
+         border: thin solid  rgba(0, 0, 0, 0.658) !important;
+         background:rgba(0, 0, 0, 0.658) !important;
+         padding:10px !important; 
+    }
+    .textslide2{
+        font-size: 18px !important;
+    }   
+}
+.para1{
+    font-size: 24px;
+    font-weight: 400;
+    width: 100% !important;
+    color: white;
+    border: thin solid  rgba(0, 0, 0, 0.658) !important;
+    background:rgba(0, 0, 0, 0.658) !important;
+}
+/*end slide*/
+/*start section1*/
+#section1{
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:5px 10px 18px #888888;
+    padding:20px;
+    width: 80%;
+
+}
+#img2{
+    height: 500px;
+    width:400px ;
+    border-radius: 10px;
+}
+#titre1{
+    font-size: 48px;
+    font-weight: 400;
+    font-family:fantasy;
+    color:rgb(88, 21, 21);
+}
+#aboutmy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+}
+.card {
+    border:none !important;}
+@media(min-width: 768px) and (max-width:1024px){
+    #card-img{
+        width: 500px !important;
+    }
+    .card-img{
+        width: 100% !important;
+        height: auto !important;
+        align-self: center !important;
+    }
+}
+@media (max-width: 540px){
+    #titre1{
+        font-size: 32px !important;
+        font-weight: 200;
+    }
+    #section1{
+        padding: 0px;
+    }
+}
+/*end section 1*/
+/*start section 2*/
+.thrillergenre{
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+}
+.historicalgenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color:rgb(224, 177, 115) !important ;
+    box-shadow:5px 10px 18px rgb(224, 177, 115) !important;
+    background-color: rgb(224, 177, 115) !important ;
+}
+.romancegenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color:rgb(167, 124, 124) !important ;
+    box-shadow:5px 10px 18px rgb(167, 124, 124) !important;
+    background-color: rgb(167, 124, 124) !important;
+}
+.thrillergenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color: rgb(23, 37, 1) !important;
+    box-shadow:5px 10px 18px rgb(23, 37, 1)!important;
+    background-color:rgb(23, 37, 1) !important;
+}
+.mysterygenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color: rgb(209, 212, 212) !important;
+    box-shadow:5px 10px 18px  rgb(209, 212, 212)!important;
+    background-color:  rgb(209, 212, 212) !important;
+}
+.fantasygenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color:rgb(192, 162, 201) !important;
+    box-shadow:5px 10px 18px rgb(192, 162, 201)  !important;
+    background-color: rgb(192, 162, 201)!important;
+}
+.actiongenre{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+    border-color:rgb(148, 175, 233) !important;
+    box-shadow:5px 10px 18px rgb(148, 175, 233) !important;
+    background-color: rgb(148, 175, 233) !important ;
+}
+#section2{
+    width: 100%;
+}
+.title2{
+    font-size: 48px;
+    font-weight: 400; 
+    font-family:fantasy;
+    color: #47596f;
+}
+.genreicon{
+    border-color: #888888 !important;
+    border-width: 3px !important;
+}
+@media (min-width: 720px) and (max-width: 1050px){
+    .genreicon{
+        font-size: 0.5em !important;
+        align-self: center !important;
+    }
+}
+/*end section2*/
+/*start section3-1*/
+#historical{
+    background-image: url(/image/historical\ site.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: rgb(68, 43, 5);
+    text-shadow: 3px 4px 5px rgb(240, 197, 134);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px rgb(109, 69, 9) ;
+}
+.bookimg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px rgb(109, 69, 9) ;
+}
+
+@media (min-width : 768px)and (max-width:1024px){
+    #historical{
+        width: 100% !important;
+        height: 700px !important;
+    }
+}
+@media(max-width:540px){
+    #historical{
+    background-image: url(/image/historicalsm2.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color: rgb(68, 43, 5);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+    .list-group-item{background-color: transparent !important;}
+    .bookimg{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+/*end section3-1*/
+/*start section3-2*/
+#romance{
+    background-image: url(/image/romance2r.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: rgb(87, 7, 7);
+    text-shadow: 3px 4px 5px rgb(240, 134, 134);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px  rgb(87, 7, 7) ;
+}
+@media (min-width : 768px)and (max-width:1024px){
+    #romance{
+        width: 100% !important;
+        height: 700px !important;
+    }
+}
+@media(max-width:540px){
+    #romance{
+    background-image: url(/image/rom-sm.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color: rgb(87, 7, 7);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+}
+/*end section3-2*/
+/*start section3-3*/
+#thriller{
+    background-image: url(/image/thriller2.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: rgb(23, 37, 1);
+    text-shadow: 3px 4px 5px rgb(148, 160, 130);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px  rgb(23, 37, 1) ;
+}
+@media (min-width : 768px)and (max-width:1024px){
+    #thriller{
+        width: 100% !important;
+        height: 700px !important;
+    }
+}
+@media(max-width:540px){
+    #thriller{
+    background-image: url(/image/thriller-sm.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color: rgb(23, 37, 1);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+}
+
+/*end section3-3*/
+/*start section3-4*/
+#mystery{
+    background-image: url(/image/mystery2.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: rgb(221, 241, 241);
+    text-shadow: 3px 4px 5px rgb(148, 160, 130);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px  rgb(26, 51, 51) ;
+}
+@media (min-width : 768px)and (max-width:1024px){
+    #mystery{
+        width: 100% !important;
+        height: 700px !important;
+    }
+}
+@media(max-width:540px){
+    #mystery{
+    background-image: url(/image/mystery2-sm.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color:rgb(221, 241, 241);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+}
+
+/*end section3-4*/
+/*start section3-5*/
+#fantasy{
+    background-image: url(/image/fantasy3.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color: rgb(109, 34, 194);
+    text-shadow: 3px 4px 5px rgb(187, 155, 223);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px rgb(109, 34, 194) ;
+}
+@media (min-width : 768px)and (max-width:1024px){
+    #fantasy{
+        width: 100% !important;
+        height: 700px !important;
+    }
+}
+@media(max-width:540px){
+    #fantasy{
+    background-image: url(/image/fantasy-sm.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color:rgb(109, 34, 194);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+}
+
+/*end section3-5*/
+/*start section4*/
+.section4{
+    background-image: url(/image/book\ and\ ladders.jpg); 
+    background-size: cover;
+    width: 100%;
+    height: 400px !important;
+    color: white;
+}
+.wanna{
+    background-color: rgba(0, 0, 0, 0.582);
+    border: thick solid white;
+    width: 70% !important;
+}
+@media(max-width:540px){
+    .section4{
+        width: 100%;
+        height: 200px !important;  
+    }
+    .wanna{
+        width: 90% !important;
+        height: 60% !important;
+        padding-top: 10px;
+    }
+    .wanna > h3{
+        font-size: 14px !important;
+    }
+    #clickhere{
+        size: 50% !important;
+        font-size: 10px !important;
+    }
+}
+/*end section4*/
+/*start section4*/
+.conclusion{
+    border-bottom:thin solid rgb(47, 70, 50);
+    font-size: 24px;
+    font-weight: 200;
+    font-family:cursive;
+}
+@media (max-width:540px){
+    .conclusion{
+        font-size: 14px;
+    }
+    #joinbtn{
+        font-size: 14px;
+    }
+}
+
+/*end section4*/
+/*end main*/
+/*start footer*/
+/*start section 6*/
+.section6{
+    background-color: rgb(49, 34, 34);
+}
+.footerlinks > div{
+    margin-bottom: 10px !important;
+}
+/*end section6*/

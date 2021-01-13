@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOKWORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bookworm.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: rgb(250, 244, 237) !important;">
+    <a class="navbar-brand col-5 col-md-3 text-start" href="#" style="margin-left:30px;" id="book">BookWorm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-0">
+        <li class="nav-item active">
+          <a class="navbar-brand me-5" href="#homeslide" id="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand me-5" href="#aboutmy" id="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand me-5" href="#" id="contacts">Contacts</a>
+        </li>
+        <li class="nav-item dropdown me-5">
+          <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Genres
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#historical">Historical</a>
+            <a class="dropdown-item" href="#romance">Romance</a>
+            <a class="dropdown-item" href="#thriller">Thriller</a>
+            <a class="dropdown-item" href="#mystery">Mystery</a>
+            <a class="dropdown-item" href="#fantasy">Fantasy</a>
+            <a class="dropdown-item" href="#action">Action</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown me-5">
+          <div class="navbar-brand dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Your Book List :
+          <div class="navbar-brand pe-2 mx-0" style=" font-size:18px;border-color: rgb(90, 3, 3) !important ;" id="nb-your-books">0</div>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" style="display:none;"id="hist-book1" href="#historical">The Downstairs Girl</a>
+            <a class="dropdown-item" style="display: none;" id="hist-book2" href="#historical">Hannibal: Clouds Of War</a>
+            <a class="dropdown-item" style="display: none;"id="rom-book1" href="#romance">Flame In The Mist</a>
+            <a class="dropdown-item" style="display: none;"id="rom-book2" href="#romance">Pride And Prejudice</a>
+            <a class="dropdown-item" style="display: none;" id="thr-book1" href="#thriller">And Then They Were None</a>
+            <a class="dropdown-item" style="display: none;" id="thr-book2" href="#thriller">The Whisperer</a>
+            <a class="dropdown-item" style="display: none;" id="mys-book1" href="#mystery">Revenger</a>
+            <a class="dropdown-item" style="display: none;" id="thr-book2" href="#thriller">perfect</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <p class=" navbar-brand mr-0">Total Cost :$</p>
+          <div class=" navbar-brand" id="totalcost">0</div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <main>
+  <!--start slide-->
+  <section id="homeslide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/image/library.jpg" class=" img1 d-block w-100" alt="library">
+          <div class="carousel-caption ">
+            <h5 class="welcome">Welcome Fellow Bookworms!! </h5>
+            <p class="para1">This blog is dedicated to anyone whose nose is always in a book, who never ceases nurturing their passion of reading and whose love for losing himself among the pages of an alternate reality flows eternally.
+            </p>
+            <h6 style="font-size: 18px; font-weight: 400;" class="checkout">Check what this blog is About!!</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/image/lamps and bookshelf.jpg" class=" img1 d-block w-100" alt="bookshelf and lamps">
+          <div class="carousel-caption ">
+            <h5 class="welcome2" style="font-size: 65px;">Find Your Next Book To Read!!</h5>
+            <p style="font-size: 24px; font-weight: 400;" class="textslide2">A books' collection of every genre : Historical , Romance.. and type : Novels , mangas... </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/image/books and rain.jpg" class=" img1 d-block w-100" alt="books and rain">
+          <div class="carousel-caption ">
+            <h5 class="welcome2" >Share Your Insights And Exchange Books With Other Bookworms!!</h5>
+            <p style="font-size: 24px; font-weight: 400;" class="textslide2">React to my reviews and share your favourite book for us to read and review. </p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!--end slide-->
+  <!--start section1-->
+  <section id="section1">
+    <div class="card mb-3 justify-content-center container">
+      <div class="row no-gutters">
+        <div class="col-md-6 col-sm-12">
+          <div class="card-body">
+            <h5 class="card-title" id="titre1">What Is My Blog About...</h5>
+            <p class="card-text"><p class="para2">I love reading, I love being immersed in the well-thought of storyline, I love how the adrenaline rushes through my veins everytime a plottwist shows up, I love how I get teleported into another world,place and era, I love discovering new histories,cultures and lifestyles, uncovering myths, deciphering riddles.</p>
+            <p class="para3">And I feel that I am not the only one who harbours these feelings.</p>
+            <p class="para4">Therefore I thought why not share my favourite books of every genre I read and reviewed just so we can relish our passion together while exchanging our insights and opinions </p>
+            <p class="para5">I hope you enjoy this books'collection and find one that suit your tast to be your next book to read!</p></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12" id=card-img>
+          <img src="/image/girl reading.jpg" class="card-img" alt="girl reading" style="height:100%;">
+        </div>
+      </div>
+    </div>
+    <!--div class=" container row">
+    <div id="aboutmy" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+      <h2 id="titre1">What Is My Blog About...</h2>
+      <p class="para2">I love reading, I love being immersed in the well-thought of storyline, I love how the adrenaline rushes through my veins everytime a plottwist shows up, I love how I get teleported into another world,place and era, I love discovering new histories,cultures and lifestyles, uncovering myths, deciphering riddles.</p>
+      <p class="para3">And I feel that I am not the only one who harbours these feelings.</p>
+      <p class="para4">Therefore I thought why not share my favourite books of every genre I read and reviewed just so we can relish our passion together while exchanging our insights and opinions </p>
+      <p class="para5">I hope you enjoy this books'collection and find one that suit your tast to be your next book to read!</p>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+    <img src="/image/girl reading.jpg" id="img2">
+  </div-->
+    </div>
+  </section>
+  <!--end section1-->
+  <!--stat section2-->
+  <section class="section2"><div class="container mt-5 p-3  " id="section2">
+    <h2 class="title2 text-center">Find The Genre That You're Fond Of!!</h2>
+    <div class="row d-flex ml-3">
+      <div class=" col-lg-4 col-md-4 col-sm-6 col-12" >
+        <a class="historicalgenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start" href="#historical" >
+          <div class="genreicon"><i class="fas fa-chess-rook col-4" style="font-size: 1.5em; color:  rgb(109, 69, 9);"></i></div>
+          <h4 style="margin-right: 5px !important;  color:  rgb(109, 69, 9);" > Historical</h4>
+        </a>
+      </div>
+      <div class="  col-lg-4 col-md-4 col-sm-6 col-12" href="#">
+        <a class="romancegenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start">
+          <div class="genreicon"><i class=" fas fa-hand-holding-heart col-4" style="font-size: 1.5em; color:  rgb(71, 6, 10);"></i></div>
+          <h4 style="margin-right: 5px !important; color: rgb(71, 6, 10);"> Romance</h4>
+        </a>
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-6 col-12" href="#">
+        <a class="thrillergenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start">
+          <div class="genreicon"><i class="fas fa-skull col-4" style="font-size: 1.5em; color: rgb(228, 241, 207);"></i></div>
+          <h4 style="margin-right: 5px !important; color: rgb(228, 241, 207);"> Thriller</h4>
+        </a>
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-6 col-12" href="#">
+        <a class="mysterygenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start">
+          <div class="genreicon"><i class="fas fa-search col-4" style="font-size: 1.5em; color: rgb(26, 51, 51);"></i></div>
+          <h4 style="margin-right: 5px !important;color:rgb(26, 51, 51);"> Mystery</h4>
+        </a> 
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-6 col-12" href="#">
+        <a class="fantasygenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start">
+          <div class="genreicon"><i class="fas fa-hat-wizard col-4" style="font-size: 1.5em; color: rgb(48, 26, 73);"></i></div>
+          <h4 style="margin-right: 5px !important; color: rgb(48, 26, 73);"> Fantasy</h4>
+        </a>
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-6 col-12" href="#">
+        <a class="actiongenre border rounded-lg pl-4 py-3 my-2 shadow-sm p-3 bg-white rounded row justify-content-start">
+          <div class="genreicon"><i class="fas fa-running col-4" style="font-size: 1.5em; color: rgb(56, 75, 117);"></i><!--i class="fas fa-hand-holding-heart col-4" style="font-size: 1.5em;"></i--></div>
+          <h4 style="margin-right: 5px !important;color:rgb(56, 75, 117) !important;"> Action</h4>
+        </a>
+      </div>
+    </div>
+  </div></section>
+  <!--end section2-->
+  <!--start section3-1-->
+  <section class="section3 mt-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <h4 id="historical">HISTORICAL</h4>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+                <div class="row  reviewlike">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <img src="/image/the downstairs girl.jpg" class="bookimg" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                    <h3 class="booktitle" style="color: rgb(109, 69, 9);">The Downstairs Girl</h3>
+                    <p class="myreview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                    <p class="card-text"><small class="text-muted">Total Price : $18</small></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" id="div-opinion" >
+                    <ul class="list-group list-group-flush" >
+                      <li class="list-group-item" id="opinion1" >
+                        <div class="like  col-12 d-flex justify-content-around align-items-center">
+                        <i class="fas fa-heart " style="font-size: 2em;" id="histheart1" onclick="histlike1()"></i>
+                        <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="histthumb1" onclick="histdislike1()"></i>
+                      </div></li>
+                      <li class="list-group-item" id="opinion2">
+                        <div class="didyou  col-12  align-items-center justify-content-center">
+                        <h6 class=" col-12 text-center" style="color:rgb(109, 69, 9) ;">Have You Read It??</h6>
+                        <div class="btn-group btn-group-toggle  col-12" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Yes!!
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2"> No
+                          </label>
+                        </div>
+                      </div></li>
+                      <li class="list-group-item" id="opinion3">
+                        <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                        <h6 class="text-center col-12" style="color: rgb(109, 69, 9);">What Are You Waiting For!!</h6>
+                        <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(109, 69, 9);" onclick="histadd1()" id="histbtn1">Add To The List</button>
+                      </div></li>
+                  </div>
+               </div>        
+            </li>
+            <li class="list-group-item">
+              <div class="row  reviewlike">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <img src="/image/hannibal.jpg" class="bookimg" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                  <h3 class="booktitle" style="color: rgb(109, 69, 9);">HANNIBAL : Clouds Of War</h3>
+                  <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                  <p class="card-text"><small class="text-muted">Total Price : $74</small></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" >
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="like col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around">
+                      <i class="fas fa-heart " style="font-size: 2em;" id="histheart2" onclick="histlike2()"></i>
+                      <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="histthumb2" onclick="histdislike2()"></i>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="didyou  col-12  align-items-center justify-content-center">
+                      <h6 class=" col-12 text-center" style="color: rgb(109, 69, 9);">Have You Read It??</h6>
+                      <div class="btn-group btn-group-toggle  col-12 " data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" checked> Yes!!
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2"> No
+                        </label>
+                      </div>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                      <h6 class="text-center col-12" style="color: rgb(109, 69, 9);">What Are You Waiting For!!</h6>
+                      <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(109, 69, 9)"  onclick="histadd2()" id="histbtn2">Add To The List</button>
+                    </div></li>
+                  </ul>
+                </div>
+             </div>       
+          </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section3-1-->
+  <!--start section3-2-->
+  <section class="section3 mt-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <h4 id="romance">ROMANCE</h4>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+                <div class="row  reviewlike">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <img src="/image/flame-in-the-mist.jpg" class="bookimg" style="box-shadow: 5px 10px 18px rgb(87, 7, 7) ;" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                    <h3 class="booktitle" style="color:  rgb(87, 7, 7);">Flame In The Mist</h3>
+                    <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                    <p class="card-text"><small class="text-muted">Total Price : $9</small></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" id="div-opinion" >
+                    <ul class="list-group list-group-flush" >
+                      <li class="list-group-item" id="opinion1" >
+                        <div class="like  col-12 d-flex justify-content-around align-items-center">
+                        <i class="fas fa-heart " style="font-size: 2em;" id="romheart1" onclick="romlike1()"></i>
+                        <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="romthumb1" onclick="romdislike1()"></i>
+                      </div></li>
+                      <li class="list-group-item" id="opinion2">
+                        <div class="didyou  col-12  align-items-center justify-content-center">
+                        <h6 class=" col-12 text-center" style="color: rgb(87, 7, 7) ;">Have You Read It??</h6>
+                        <div class="btn-group btn-group-toggle  col-12" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Yes!!
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2"> No
+                          </label>
+                        </div>
+                      </div></li>
+                      <li class="list-group-item" id="opinion3">
+                        <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                        <h6 class="text-center col-12" style="color:  rgb(87, 7, 7);">What Are You Waiting For!!</h6>
+                        <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(87, 7, 7) !important;" onclick="romadd1()" id="rombtn1">Add To The List</button>
+                      </div></li>
+                    </ul>
+                  </div>
+               </div>        
+            </li>
+            <li class="list-group-item">
+              <div class="row  reviewlike">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <img src="/image/pride and prejudice.jpg" class="bookimg" style="box-shadow: 5px 10px 18px rgb(87, 7, 7) ;" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                  <h3 class="booktitle" style="color: rgb(87, 7, 7);">Pride And Prejudice</h3>
+                  <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                  <p class="card-text"><small class="text-muted">Total Price : $10</small></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" >
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="like col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around">
+                      <i class="fas fa-heart " style="font-size: 2em;" id="romheart2" onclick="romlike2()"></i>
+                      <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="romthumb2" onclick="romdislike2()"></i>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="didyou  col-12  align-items-center justify-content-center">
+                      <h6 class=" col-12 text-center" style="color:  rgb(87, 7, 7);">Have You Read It??</h6>
+                      <div class="btn-group btn-group-toggle  col-12 " data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" checked> Yes!!
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2"> No
+                        </label>
+                      </div>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                      <h6 class="text-center col-12" style="color:  rgb(87, 7, 7);">What Are You Waiting For!!</h6>
+                      <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(87, 7, 7) !important;"  onclick="romadd2()" id="rombtn2">Add To The List</button>
+                    </div></li>
+                  </ul>
+                </div>
+             </div>       
+          </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--start section3-2-->
+  <!--start section3-3-->
+  <section class="section3 mt-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <h4 id="thriller">THRILLER</h4>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+                <div class="row  reviewlike">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 mb-2">
+                    <img src="/image/and then they were none.jpg" class="bookimg" style="box-shadow: 5px 10px 18px rgb(23, 37, 1) ;" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                    <h3 class="booktitle" style="color:  rgb(23, 37, 1);">And Then They Were None</h3>
+                    <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                    <p class="card-text"><small class="text-muted">Total Price : $7</small></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" id="div-opinion" >
+                    <ul class="list-group list-group-flush" >
+                      <li class="list-group-item" id="opinion1" >
+                        <div class="like  col-12 d-flex justify-content-around align-items-center">
+                        <i class="fas fa-heart " style="font-size: 2em;" id="thrheart1" onclick="thrlike1()"></i>
+                        <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="thrthumb1" onclick="thrdislike1()"></i>
+                      </div></li>
+                      <li class="list-group-item" id="opinion2">
+                        <div class="didyou  col-12  align-items-center justify-content-center">
+                        <h6 class=" col-12 text-center" style="color: rgb(23, 37, 1) ;">Have You Read It??</h6>
+                        <div class="btn-group btn-group-toggle  col-12" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Yes!!
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2"> No
+                          </label>
+                        </div>
+                      </div></li>
+                      <li class="list-group-item" id="opinion3">
+                        <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                        <h6 class="text-center col-12" style="color:  rgb(23, 37, 1);">What Are You Waiting For!!</h6>
+                        <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(23, 37, 1) !important" onclick="Thradd1()" id="thrbtn1">Add To The List</button>
+                      </div></li>
+                    </ul>
+                  </div>
+               </div>        
+            </li>
+            <li class="list-group-item">
+              <div class="row  reviewlike">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <img src="/image/the whisperer.jpg" class="bookimg" style="box-shadow: 5px 10px 18px  rgb(23, 37, 1) ;" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                  <h3 class="booktitle" style="color:  rgb(23, 37, 1);">The Whisperer</h3>
+                  <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                  <p class="card-text"><small class="text-muted">Total Price : $36</small></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" >
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="like col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around">
+                      <i class="fas fa-heart " style="font-size: 2em;" id="thrheart2" onclick="thrlike2()"></i>
+                      <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="thrthumb2" onclick="thrdislike2()"></i>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="didyou  col-12  align-items-center justify-content-center">
+                      <h6 class=" col-12 text-center" style="color:   rgb(23, 37, 1);">Have You Read It??</h6>
+                      <div class="btn-group btn-group-toggle  col-12 " data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" checked> Yes!!
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2"> No
+                        </label>
+                      </div>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                      <h6 class="text-center col-12" style="color:   rgb(23, 37, 1);">What Are You Waiting For!!</h6>
+                      <button type="button" class="btn btn-outline-dark col-12" style="color:  rgb(23, 37, 1) !important;"  onclick="thradd2()" id="thrbtn2">Add To The List</button>
+                    </div></li>
+                  </ul>
+                </div>
+             </div>       
+          </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section3-3-->
+  <!--start section3-4-->
+  <section class="section3 mt-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <h4 id="mystery">MYSTERY</h4>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+                <div class="row  reviewlike">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 mb-2">
+                    <img src="/image/revenger.jpg" class="bookimg" style="box-shadow: 5px 10px 18px rgb(26, 51, 51) ;" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                    <h3 class="booktitle" style="color: rgb(26, 51, 51);">Revenger</h3>
+                    <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                    <p class="card-text"><small class="text-muted">Total Price : $15</small></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" id="div-opinion" >
+                    <ul class="list-group list-group-flush" >
+                      <li class="list-group-item" id="opinion1" >
+                        <div class="like  col-12 d-flex justify-content-around align-items-center">
+                        <i class="fas fa-heart " style="font-size: 2em;" id="mysheart1" onclick="myslike1()"></i>
+                        <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="mysthumb1" onclick="mysdislike1()"></i>
+                      </div></li>
+                      <li class="list-group-item" id="opinion2">
+                        <div class="didyou  col-12  align-items-center justify-content-center">
+                        <h6 class=" col-12 text-center" style="color:rgb(26, 51, 51) ;">Have You Read It??</h6>
+                        <div class="btn-group btn-group-toggle  col-12" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Yes!!
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2"> No
+                          </label>
+                        </div>
+                      </div></li>
+                      <li class="list-group-item" id="opinion3">
+                        <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                        <h6 class="text-center col-12" style="color:  rgb(26, 51, 51);">What Are You Waiting For!!</h6>
+                        <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(26, 51,51) !important" onclick="mysadd1()" id="mysbtn1">Add To The List</button>
+                      </div></li>
+                    </ul>
+                  </div>
+               </div>        
+            </li>
+            <li class="list-group-item">
+              <div class="row  reviewlike">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <img src="/image/perfect.jpg" class="bookimg" style="box-shadow: 5px 10px 18px   rgb(26, 51, 51) ;" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                  <h3 class="booktitle" style="color:   rgb(26, 51, 51);">TPerfect</h3>
+                  <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                  <p class="card-text"><small class="text-muted">Total Price : $36</small></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" >
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="like col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around">
+                      <i class="fas fa-heart " style="font-size: 2em;" id="thrheart2" onclick="myslike2()"></i>
+                      <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="thrthumb2" onclick="mysdislike2()"></i>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="didyou  col-12  align-items-center justify-content-center">
+                      <h6 class=" col-12 text-center" style="color:    rgb(26, 51, 51);">Have You Read It??</h6>
+                      <div class="btn-group btn-group-toggle  col-12 " data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" checked> Yes!!
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2"> No
+                        </label>
+                      </div>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                      <h6 class="text-center col-12" style="color:   rgb(26, 51, 51);">What Are You Waiting For!!</h6>
+                      <button type="button" class="btn btn-outline-dark col-12" style="color:  rgb(26, 51, 51) !important"  onclick="mysadd2()" id="mysbtn2">Add To The List</button>
+                    </div></li>
+                  </ul>
+                </div>
+             </div>       
+          </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section3-4-->
+   <!--start section3-4-->
+   <section class="section3 mt-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <h4 id="fantasy">MYSTERY</h4>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 d-flex align-items-center">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+                <div class="row  reviewlike">
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-12 mb-2">
+                    <img src="/image/revenger.jpg" class="bookimg" style="box-shadow: 5px 10px 18px rgb(109, 34, 194) ;" >
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                    <h3 class="booktitle" style="color: rgb(109, 34, 194);">Revenger</h3>
+                    <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                    <p class="card-text"><small class="text-muted">Total Price : $15</small></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" id="div-opinion" >
+                    <ul class="list-group list-group-flush" >
+                      <li class="list-group-item" id="opinion1" >
+                        <div class="like  col-12 d-flex justify-content-around align-items-center">
+                        <i class="fas fa-heart " style="font-size: 2em;" id="fanheart1" onclick="fanlike1()"></i>
+                        <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="fanthumb1" onclick="fandislike1()"></i>
+                      </div></li>
+                      <li class="list-group-item" id="opinion2">
+                        <div class="didyou  col-12  align-items-center justify-content-center">
+                        <h6 class=" col-12 text-center" style="color:rgb(109, 34, 194) ;">Have You Read It??</h6>
+                        <div class="btn-group btn-group-toggle  col-12" data-toggle="buttons">
+                          <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Yes!!
+                          </label>
+                          <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2"> No
+                          </label>
+                        </div>
+                      </div></li>
+                      <li class="list-group-item" id="opinion3">
+                        <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                        <h6 class="text-center col-12" style="color:  rgb(109, 34, 194);">What Are You Waiting For!!</h6>
+                        <button type="button" class="btn btn-outline-dark col-12" style="color: rgb(109, 34, 194)!important" onclick="fanadd1()" id="fanbtn1">Add To The List</button>
+                      </div></li>
+                    </ul>
+                  </div>
+               </div>        
+            </li>
+            <li class="list-group-item">
+              <div class="row  reviewlike">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <img src="/image/perfect.jpg" class="bookimg" style="box-shadow: 5px 10px 18px   rgb(109, 34, 194) ;" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mr-auto">
+                  <h3 class="booktitle" style="color:   rgb(109, 34, 194);">Perfect</h3>
+                  <p class="mureview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam laboriosam nisi architecto aperiam unde obcaecati facere exercitationem reiciendis excepturi eius quibusdam, minus deserunt officia dolores vel necessitatibus, tenetur pariatur?</p>
+                  <p class="card-text"><small class="text-muted">Total Price : $11</small></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center row align-items-center px-0" >
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="like col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around">
+                      <i class="fas fa-heart " style="font-size: 2em;" id="fanheart2" onclick="fanlike2()"></i>
+                      <i class="fas fa-thumbs-down " style="font-size: 2em ; " id="fanthumb2" onclick="fandislike2()"></i>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="didyou  col-12  align-items-center justify-content-center">
+                      <h6 class=" col-12 text-center" style="color:    rgb(109, 34, 194);">Have You Read It??</h6>
+                      <div class="btn-group btn-group-toggle  col-12 " data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                          <input type="radio" name="options" id="option1" checked> Yes!!
+                        </label>
+                        <label class="btn btn-secondary">
+                          <input type="radio" name="options" id="option2"> No
+                        </label>
+                      </div>
+                    </div></li>
+                    <li class="list-group-item">
+                      <div class="addtothelist  col-12 align-items-center justify-content-center ">
+                      <h6 class="text-center col-12" style="color:   rgb(109, 34, 194);">What Are You Waiting For!!</h6>
+                      <button type="button" class="btn btn-outline-dark col-12" style="color:  rgb(109, 34, 194)!important"  onclick="fanadd2()" id="fanbtn2">Add To The List</button>
+                    </div></li>
+                  </ul>
+                </div>
+             </div>       
+          </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section3-5-->
+  <!-- start section4-->
+  <section class="section4 mt-5 container-fluid border d-flex align-items-center justify-content-center">
+     <div class="wanna text-center row align-items-evenly justify-content-center p-lg-5">
+       <h3 class="col-12">Wanna Add A Book Of Your Own To This Webpage? You're More Than Welcome!!</h3>
+       <a href="shareyourbook.html"><button type="button" class="btn clickhere btn-outline-light col-12"href="#shareyourbook.html" id="clickhere">Click Here!!</button></a>
+    </div>
+  </section>
+  <!-- end section4-->
+   <!-- start section5-->
+   <section class="section5 container mt-5 ">
+     <div class="conclusion col-12 py-5 text-center">I hope you enjoyed checking these books out and I'd love to hear how these reviews inspired you !Let me know which is your favourite out of them in the comments.</div>
+     <div class="conclusion col-12 py-5 text-center"><p>In an effort to oster a creative and knowlegeble community,I've started a Facebook reading club called "the Art of Books",where we discuss great books of various genres and types and unveil the messages they deliver to the reader.I would love for you to join the fun, get to know poeple who are bookworms like you and most importantly cultivate your passion of reading.</p>
+      <button type="button" class="btn btn-dark rounded-pill btn-lg mt-2"style="background-color: rgb(47, 70, 50) !important; border-color:rgb(47, 70, 50)!important;" id="joinbtn">Join Our Facebook club</button>
+    </div>
+    <div class="conclusion col-12 py-5 text-center">Thanks for paying a visit to this website make sure to leave a comment and a like .Also, help share this website and show it to your friends.</div>
+    <div class=" comment col-12 py-5 row align-items-center justify-content-center"style="; margin-right: 0px !important;margin-left: 0px !important;">
+      <div class=" col-12 me-5">
+        <label for="exampleFormControlTextarea1">Comments</label>
+        <div class=" border border-dark">
+        <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="7">
+        </textarea>
+        <div class="d-flex justify-content-end p-2"><button type="button" class="btn btn-dark rounded-pill btn-lg mt-2 "style="background-color:black !important;" id="joinbtn">Post Comment</button></div>
+        </div>
+      </div>
+      <div class=" col-12 row  mt-3 align-items-center" >
+        <div class="btn-group btn-group-toggle col-lg-4 col-md-4 col-12 mb-3" data-toggle="buttons">
+          <label class="btn btn-dark active d-flex align-items-center justify-content-center"  >
+            <input type="radio" name="options" onclick="myalert()" id="shareicon"  checked><i class="fas fa-share-square" style="font-size: 1.3em;"></i>
+          </label>
+          <label class="btn btn-dark">
+            <input type="radio" name="options" id="sharetext" onclick="myalert()">Share This Webpage!
+          </label>
+      </div>
+      <i class="fas fa-grin-hearts col-lg-2 col-md-2 col-3 mb-3 text-center" style="font-size: 2.5em;" id="grinemoji" onclick="grin()"></i>
+      <i class="fas fa-smile col-lg-2 col-md-2 col-3 mb-3 text-center" style="font-size: 2.5em;" id="smileemoji" onclick="smile()"></i>
+      <i class="fas fa-meh col-lg-2 col-md-2 col-3 mb-3 text-center" style="font-size: 2.5em;" id="mehemoji" onclick="meh()"></i>
+      <i class="fas fa-frown col-lg-2 col-md-2 col-3 mb-3 text-center" style="font-size: 2.5em;" id="frownemoji" onclick="frown()"></i>
+    </div>
+   </section>
+   <!-- end section5-->
+    </main>
+    <footer>
+      <!-- start section6-->
+      <section class="section6 container-fluid row text-center justify-content-center align-items-between pt-4 mx-0">
+        <h4 class="col-12 pb-3" style="font-weight: 400 !important; color: rgb(236, 191, 65);">CONNECT WITH ME !!</h4>
+        <div class="mediagroup col-12 row align-items-center justify-content-center pb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook mx-2" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram mx-2" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter mx-2" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-youtube mx-2" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>
+        </div>
+        <div class="footerlinks row col-12 align-items-around justify-content-around p-0">
+          <div class="col-12 col-lg-4 col-md-4 row align-items-center justify-content-center" style="text-transform: uppercase; font-size: 12.2px; letter-spacing: .25em; line-height: 2.2em; text-decoration: underline;">
+            <a href="#historical" class="col-12" style="color:white;" >Historical</a>
+            <a href="#romance" class="col-12" style="color:white;">Thriller</a>
+            <a href="#thriller" class="col-12"style="color:white;" >Romance</a>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 row align-items-center justify-content-center" style="text-transform: uppercase; font-size: 12.2px; letter-spacing: .25em; line-height: 2.2em; text-decoration: underline;">
+            <a href="#mystery" class="col-12"style="color:white;">Mystery</a>
+            <a href="#fantasy" class="col-12" style="color:white;">Action</a>
+            <a href="#action" class="col-12" style="color:white;">Fantasy</a>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 text-center row align-items-center justify-content-center" style="text-transform: uppercase; font-size: 12.2px; letter-spacing: .25em; line-height: 2.2em; text-decoration: underline;">
+            <a href="shareyourbook.html" class="col-12" style="color:white;">About</a>
+            <a href="#section1" class="col-12" style="color:white;">Book review Request</a>
+          </div>
+        </div>
+        <h6 class="col-12 pt-5" style="font-weight: lighter; color: rgb(172, 172, 172);"> A Website created in 2021 </h6>
+      </section>
+      <!-- end section6-->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="/bookworm.js"></script>
+</body>
+</html>
