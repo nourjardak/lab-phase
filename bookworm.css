@@ -16,7 +16,7 @@
 /*end navbar*/
 /*start slide*/
 .img1{
-    height: 550px;
+    height: 600px;
 }
 .welcome{
     font-size: 72px;
@@ -41,7 +41,7 @@
     }
     .welcome{
         font-size: 36px !important;
-        font-weight: 300 !important;
+        font-weight: 600 !important;
     }
     .welcome2{ 
         color: white;
@@ -117,6 +117,7 @@
     }
     #section1{
         padding: 0px;
+        padding-bottom: 4px;
     }
 }
 /*end section 1*/
@@ -193,12 +194,17 @@
         align-self: center !important;
     }
 }
+@media (max-width:540px){
+    .title2{
+        font-size: 32px;
+    }
+}
 /*end section2*/
 /*start section3-1*/
 #historical{
     background-image: url(/image/historical\ site.jpg);
     background-size: cover;
-    height: 600px;
+    height: 860px;
     width: 100%;
     border-radius: 10px;
     font-size: 28px;
@@ -222,7 +228,8 @@
 @media (min-width : 768px)and (max-width:1024px){
     #historical{
         width: 100% !important;
-        height: 700px !important;
+        height: 1100px !important;
+        font-size: 38px;
     }
 }
 @media(max-width:540px){
@@ -250,7 +257,7 @@
 #romance{
     background-image: url(/image/romance2r.jpg);
     background-size: cover;
-    height: 600px;
+    height: 760px;
     width: 100%;
     border-radius: 10px;
     font-size: 28px;
@@ -264,10 +271,14 @@
     margin-left: 0px;
     box-shadow:5px 10px 18px  rgb(87, 7, 7) ;
 }
+@media (min-width : 768px)and (max-width:1023px){
+    .myreview{font-size: 13px;}
+}
 @media (min-width : 768px)and (max-width:1024px){
     #romance{
         width: 100% !important;
-        height: 700px !important;
+        height: 900px !important;
+        font-size: 38px;
     }
 }
 @media(max-width:540px){
@@ -290,12 +301,12 @@
 #thriller{
     background-image: url(/image/thriller2.jpg);
     background-size: cover;
-    height: 600px;
+    height: 850px;
     width: 100%;
     border-radius: 10px;
     font-size: 28px;
-    font-weight: 600 !important;
-    color: rgb(23, 37, 1);
+    font-weight: 400 !important;
+    color: rgb(193, 204, 170);
     text-shadow: 3px 4px 5px rgb(148, 160, 130);
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -307,7 +318,8 @@
 @media (min-width : 768px)and (max-width:1024px){
     #thriller{
         width: 100% !important;
-        height: 700px !important;
+        height: 1050px !important;
+        font-size: 38px;
     }
 }
 @media(max-width:540px){
@@ -331,7 +343,7 @@
 #mystery{
     background-image: url(/image/mystery2.jpg);
     background-size: cover;
-    height: 600px;
+    height: 800px;
     width: 100%;
     border-radius: 10px;
     font-size: 28px;
@@ -348,7 +360,8 @@
 @media (min-width : 768px)and (max-width:1024px){
     #mystery{
         width: 100% !important;
-        height: 700px !important;
+        height: 920px !important;
+        font-size: 38px;
     }
 }
 @media(max-width:540px){
@@ -372,7 +385,7 @@
 #fantasy{
     background-image: url(/image/fantasy3.jpg);
     background-size: cover;
-    height: 600px;
+    height: 730px;
     width: 100%;
     border-radius: 10px;
     font-size: 28px;
@@ -389,7 +402,8 @@
 @media (min-width : 768px)and (max-width:1024px){
     #fantasy{
         width: 100% !important;
-        height: 700px !important;
+        height: 850px !important;
+        font-size: 38px;
     }
 }
 @media(max-width:540px){
@@ -402,13 +416,55 @@
     text-orientation:sideways;
     text-align: center !important;
     font-size: 32px;
-    color:rgb(109, 34, 194);
+    color:rgb(218, 199, 240);
     padding:80px 20px;
     margin-bottom: 20px;
     }
 }
 
 /*end section3-5*/
+/*start section3-6*/
+#action{
+    background-image: url(/image/action.jpg);
+    background-size: cover;
+    height: 950px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600 !important;
+    color:rgb(56, 75, 117);
+    text-shadow: 3px 4px 5px rgb(165, 181, 214);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align:start !important;
+    font-family:"Lucida Calligraphy", "Brush Script MT", cursive;
+    margin-left: 0px;
+    box-shadow:5px 10px 18px rgb(56, 75, 117);
+}
+@media (min-width : 768px)and (max-width:1024px){
+    #action{
+        width: 100% !important;
+        height: 1100px !important;
+        font-size: 38px;
+    }
+}
+@media(max-width:540px){
+    #action{
+    background-image: url(/image/action-sm.jpg);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways;
+    text-align: center !important;
+    font-size: 32px;
+    color:rgb(233, 47, 56);
+    padding:80px 20px;
+    margin-bottom: 20px;
+    }
+}
+
+/*end section3-6*/
 /*start section4*/
 .section4{
     background-image: url(/image/book\ and\ ladders.jpg); 

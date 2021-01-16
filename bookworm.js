@@ -181,16 +181,79 @@ function thradd2(){
         tbtn2.innerHTML="Added";
         tbtn2.style.color="green";
         tbook2.removeAttribute("style");
-        total.innerHTML=+total.innerHTML+36;
+        total.innerHTML=+total.innerHTML+20;
         booknb.innerHTML=+booknb.innerHTML+1;
     }else{tbtn2.innerHTML="Add To The List";
           tbtn2.style.color="rgb(109, 69, 9)";
           booknb.innerHTML=+booknb.innerHTML-1;
-          total.innerHTML=+total.innerHTML-36;
+          total.innerHTML=+total.innerHTML-20;
         }
 }
 /*fin thriller*/
 /*mystery*/
+
+var mheart1=document.getElementById("mysheart1")
+var mdislike1=document.getElementById("mysthumb1")
+var mbook1=document.getElementById("mys-book1")
+var mbtn1=document.getElementById("mysbtn1")
+
+function myslike1(){
+if(mheart1.style.color=="rgb(196, 28, 28)"){
+    mheart1.style.color="black"
+}else{mheart1.style.color="rgb(196, 28, 28)"}
+}
+function mysdislike1(){
+    if(mdislike1.style.color=="blue"){
+        mdislike1.style.color="black"
+    }else{
+        mdislike1.style.color="blue"
+    }
+}
+function mysadd1(){
+    if(mbtn1.innerHTML=="Add To The List"){
+        mbtn1.innerHTML="Added";
+        mbtn1.style.color="green";
+        mbook1.removeAttribute("style");
+        total.innerHTML=+total.innerHTML+15;
+        booknb.innerHTML=+booknb.innerHTML+1;
+    }else{mbtn1.innerHTML="Add To The List";
+          mbtn1.style.color="rgb(109, 69, 9)";
+          booknb.innerHTML=+booknb.innerHTML-1;
+          total.innerHTML=+total.innerHTML-15;
+        }
+}
+var mheart2=document.getElementById("mysheart2")
+var mdislike2=document.getElementById("mysthumb2")
+var mbook2=document.getElementById("mys-book2")
+var mbtn2=document.getElementById("mysbtn2")
+
+function myslike2(){
+if(mheart2.style.color=="rgb(196, 28, 28)"){
+    mheart2.style.color="black"
+}else{mheart2.style.color="rgb(196, 28, 28)"}
+}
+function mysdislike2(){
+    if(mdislike2.style.color=="blue"){
+        mdislike2.style.color="black"
+    }else{
+        mdislike2.style.color="blue"
+    }
+}
+function mysadd2(){
+    if(mbtn2.innerHTML=="Add To The List"){
+        mbtn2.innerHTML="Added";
+        mbtn2.style.color="green";
+        mbook2.removeAttribute("style");
+        total.innerHTML=+total.innerHTML+36;
+        booknb.innerHTML=+booknb.innerHTML+1;
+    }else{mbtn2.innerHTML="Add To The List";
+          mbtn2.style.color="rgb(109, 69, 9)";
+          booknb.innerHTML=+booknb.innerHTML-1;
+          total.innerHTML=+total.innerHTML-36;
+        }
+}
+/*fin mystery*/
+/*fantasy*/
 
 var fheart1=document.getElementById("fanheart1")
 var fdislike1=document.getElementById("fanthumb1")
@@ -214,12 +277,12 @@ function fanadd1(){
         fbtn1.innerHTML="Added";
         fbtn1.style.color="green";
         fbook1.removeAttribute("style");
-        total.innerHTML=+total.innerHTML+11;
+        total.innerHTML=+total.innerHTML+27;
         booknb.innerHTML=+booknb.innerHTML+1;
     }else{fbtn1.innerHTML="Add To The List";
           fbtn1.style.color="rgb(109, 69, 9)";
           booknb.innerHTML=+booknb.innerHTML-1;
-          total.innerHTML=+total.innerHTML-11;
+          total.innerHTML=+total.innerHTML-27;
         }
 }
 var fheart2=document.getElementById("fanheart2")
@@ -244,15 +307,78 @@ function fanadd2(){
         fbtn2.innerHTML="Added";
         fbtn2.style.color="green";
         fbook2.removeAttribute("style");
-        total.innerHTML=+total.innerHTML+11;
+        total.innerHTML=+total.innerHTML+6;
         booknb.innerHTML=+booknb.innerHTML+1;
     }else{fbtn2.innerHTML="Add To The List";
           fbtn2.style.color="rgb(109, 69, 9)";
           booknb.innerHTML=+booknb.innerHTML-1;
-          total.innerHTML=+total.innerHTML-11;
+          total.innerHTML=+total.innerHTML-6;
         }
 }
-/*fin mystery*/
+/*fin fantasy*/
+/*action*/
+
+var aheart1=document.getElementById("actheart1")
+var adislike1=document.getElementById("actthumb1")
+var abook1=document.getElementById("act-book1")
+var abtn1=document.getElementById("actbtn1")
+
+function actlike1(){
+if(aheart1.style.color=="rgb(196, 28, 28)"){
+    aheart1.style.color="black"
+}else{aheart1.style.color="rgb(196, 28, 28)"}
+}
+function actdislike1(){
+    if(adislike1.style.color=="blue"){
+        adislike1.style.color="black"
+    }else{
+        adislike1.style.color="blue"
+    }
+}
+function actadd1(){
+    if(abtn1.innerHTML=="Add To The List"){
+        abtn1.innerHTML="Added";
+        abtn1.style.color="green";
+        abook1.removeAttribute("style");
+        total.innerHTML=+total.innerHTML+9;
+        booknb.innerHTML=+booknb.innerHTML+1;
+    }else{abtn1.innerHTML="Add To The List";
+          abtn1.style.color="rgb(109, 69, 9)";
+          booknb.innerHTML=+booknb.innerHTML-1;
+          total.innerHTML=+total.innerHTML-9;
+        }
+}
+var aheart2=document.getElementById("actheart2")
+var adislike2=document.getElementById("actthumb2")
+var abook2=document.getElementById("act-book2")
+var abtn2=document.getElementById("actbtn2")
+
+function actlike2(){
+if(aheart2.style.color=="rgb(196, 28, 28)"){
+    aheart2.style.color="black"
+}else{aheart2.style.color="rgb(196, 28, 28)"}
+}
+function actdislike2(){
+    if(adislike2.style.color=="blue"){
+        adislike2.style.color="black"
+    }else{
+        adislike2.style.color="blue"
+    }
+}
+function actadd2(){
+    if(abtn2.innerHTML=="Add To The List"){
+        abtn2.innerHTML="Added";
+        abtn2.style.color="green";
+        abook2.removeAttribute("style");
+        total.innerHTML=+total.innerHTML+8;
+        booknb.innerHTML=+booknb.innerHTML+1;
+    }else{abtn2.innerHTML="Add To The List";
+          abtn2.style.color="rgb(109, 69, 9)";
+          booknb.innerHTML=+booknb.innerHTML-1;
+          total.innerHTML=+total.innerHTML-8;
+        }
+}
+/*fin action*/
 /* fin section 4*/
 /* start section 5*/
 var g_emoji=document.getElementById("grinemoji")
@@ -288,3 +414,98 @@ function frown(){
     else{f_emoji.style.color="rgb(6, 7, 90)"}
 }
 /* end section 5*/
+/*section 6*/
+var f=document.getElementById("facebook")
+var i=document.getElementById("instagram")
+var t=document.getElementById("twitter")
+var y=document.getElementById("youtube")
+
+function fwhiter(){
+    f.style.fill="white";
+
+}
+function fnormal(){
+    f.style.fill="rgb(214, 212, 207)";
+
+}
+function iwhiter(){
+    i.style.fill="white";
+
+}
+function inormal(){
+    i.style.fill="rgb(214, 212, 207)";
+
+}
+function twhiter(){
+    t.style.fill="white";
+
+}
+function tnormal(){
+    t.style.fill="rgb(214, 212, 207)";
+
+}
+function ywhiter(){
+    y.style.fill="white";
+
+}
+function ynormal(){
+    y.style.fill="rgb(214, 212, 207)";
+
+}
+var l1=document.getElementById("footerlink1")
+var l2=document.getElementById("footerlink2")
+var l3=document.getElementById("footerlink3")
+var l4=document.getElementById("footerlink4")
+var l5=document.getElementById("footerlink5")
+var l6=document.getElementById("footerlink6")
+var l7=document.getElementById("footerlink7")
+var l8=document.getElementById("footerlink8")
+function l1whiter(){
+    l1.style.color="white"; 
+}
+function l1normal(){
+    l1.style.color="rgb(214, 212, 207)"; 
+}
+function l2whiter(){
+    l2.style.color="white"; 
+}
+function l2normal(){
+    l2.style.color="rgb(214, 212, 207)"; 
+}
+function l3whiter(){
+    l3.style.color="white"; 
+}
+function l3normal(){
+    l3.style.color="rgb(214, 212, 207)"; 
+}
+function l4whiter(){
+    l4.style.color="white"; 
+}
+function l4normal(){
+    l4.style.color="rgb(214, 212, 207)"; 
+}
+function l5whiter(){
+    l5.style.color="white"; 
+}
+function l5normal(){
+    l5.style.color="rgb(214, 212, 207)"; 
+}
+function l6whiter(){
+    l6.style.color="white"; 
+}
+function l6normal(){
+    l6.style.color="rgb(214, 212, 207)"; 
+}
+function l7whiter(){
+    l7.style.color="white"; 
+}
+function l7normal(){
+    l7.style.color="rgb(214, 212, 207)"; 
+}
+function l8whiter(){
+    l8.style.color="white"; 
+}
+function l8normal(){
+    l8.style.color="rgb(214, 212, 207)"; 
+}
+/* end section 6*/
