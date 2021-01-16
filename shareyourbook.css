@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background: url(/image/books-pages-story-stories.jpg),linear-gradient(to right, rgb(122, 77, 34) , rgb(82, 46, 46)) ;
+    background: url(./image/books-pages-story-stories.jpg),linear-gradient(to right, rgb(122, 77, 34) , rgb(82, 46, 46)) ;
     background-blend-mode: overlay ,darken;
 }
 .container{
@@ -13,7 +13,7 @@ body{
 
 }
 #title{
-    background-image: url(/image/books.jpg);
+    background-image: url(./image/books.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.534);
